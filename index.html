@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ether Lottery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-card">
+        <header>
+            <h1>🎰 Crypto Lottery</h1>
+            <button id="connectBtn">Connect Wallet</button>
+        </header>
+
+        <div class="stats-grid">
+            <div class="stat">
+                <h3>Pot Balance</h3>
+                <span id="balance">0 ETH</span>
+            </div>
+            <div class="stat">
+                <h3>Players</h3>
+                <span id="playerCount">0</span>
+            </div>
+        </div>
+
+        <div class="action-area">
+            <p>Ticket Price: <strong>0.011 ETH</strong></p>
+            <button id="enterBtn" class="primary-btn">🎟 Buy Ticket</button>
+        </div>
+
+        <div id="adminArea" class="hidden">
+            <hr>
+            <h4>Manager Zone</h4>
+            <button id="pickBtn" class="danger-btn">🎲 Pick Winner</button>
+        </div>
+
+        <div id="status">Waiting for interaction...</div>
+
+        <div class="history">
+            <p>Last Winner: <span id="lastWinner">None</span></p>
+        </div>
+    </div>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
